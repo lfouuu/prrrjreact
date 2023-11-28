@@ -7,10 +7,13 @@ import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
+import Card from 'react-bootstrap/Card';
+
+
 function App() {
 
   return(
-    
+    <div>
     <Navbar className="bg-body-tertiary justify-content-between">
     <Form inline>
       <InputGroup>
@@ -37,10 +40,22 @@ function App() {
       </Row>
     </Form>
   </Navbar>
-);
+  <Card style={{ width: '18rem' }}>
+      <Card.Img variant="top" src= "logo192.png"/>
+      <Card.Body>
+        <Card.Title>Card Title</Card.Title>
+        <Card.Text>
+          Some quick example text to build on the card title and make up the
+          bulk of the card's content.
+        </Card.Text>
+        <Button variant="primary">Go somewhere</Button>
+      </Card.Body>
+    </Card>
+
+
+  </div>
+)
 }
-
-
-  export default App
+export default App
     
-  
+
